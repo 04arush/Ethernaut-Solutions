@@ -32,9 +32,9 @@ Each challenge lives in its own folder:
 | 9 | King | DoS by blocking ETH transfer | 22 Jul |
 | 10 | Re-entrancy | Classic re-entrancy attack | 22 Jul |
 | 11 | Elevator | Untrusted external interface implementation | 23 Jul |
-| 12 | Privacy | — | — |
-| 13 | Gatekeeper One | — | — |
-| 14 | Gatekeeper Two | — | — |
+| 12 | Privacy | Private storage is publicly readable on-chain | 24 Jul |
+| 13 | Gatekeeper One | `tx.origin` vs `msg.sender`, gas manipulation, type casting | 19 Aug |
+| 14 | Gatekeeper Two | Contract code size during construction, XOR key derivation | 20 Aug |
 | 15 | Naught Coin | — | — |
 | 16 | Preservation | — | — |
 | 17 | Recovery | — | — |
@@ -73,10 +73,13 @@ Each challenge lives in its own folder:
 | Integer overflow/underflow | 5 |
 | `delegatecall` storage collision | 6 |
 | `selfdestruct` forced ETH | 7 |
-| Blockchain storage is public | 8 |
+| Blockchain storage is public | 8, 12 |
 | DoS via revert | 9 |
 | Re-entrancy | 10 |
 | Untrusted external calls | 11 |
+| Gas manipulation | 13 |
+| Type casting / bit masking | 13, 14 |
+| Contract construction exploit | 14 |
 
 ---
 
