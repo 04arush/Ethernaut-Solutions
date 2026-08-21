@@ -7,5 +7,8 @@ The `owner` is set using constructor when the contract deployed to the deployer.
 - To change the `owner` variable, we can define the `setTime()` function again in the hack contract that the call will refer to, and delegatecall will change the state variable in "Preservation" contract of.
 
 ## Solution:-
-1. Define interfaces for "NaughtCoin" and "ERC20"
-    
+1. Create a "Hack" contract
+2. Copy the state variables from "Preservation" contract
+3. Define an external function `atk()` which takes the Preservation contract as `_target` as parameter
+4. Call the `setFirstTime()` function from `_target` with the address of Hack contract. Then, call it again but with address of deployer (`msg.sender`)
+5. Define another external function `setTime()` which changes the `owner` variable with the passed in `_address`
