@@ -35,32 +35,8 @@ Each challenge lives in its own folder:
 | 12 | Privacy | Private storage is publicly readable on-chain | 24 Jul |
 | 13 | Gatekeeper One | `tx.origin` vs `msg.sender`, gas manipulation, type casting | 19 Aug |
 | 14 | Gatekeeper Two | Contract code size during construction, XOR key derivation | 20 Aug |
-| 15 | Naught Coin | — | — |
-| 16 | Preservation | — | — |
-| 17 | Recovery | — | — |
-| 18 | MagicNumber | — | — |
-| 19 | Alien Codex | — | — |
-| 20 | Denial | — | — |
-| 21 | Shop | — | — |
-| 22 | Dex | — | — |
-| 23 | Dex Two | — | — |
-| 24 | Puzzle Wallet | — | — |
-| 25 | Motorbike | — | — |
-| 26 | DoubleEntryPoint | — | — |
-| 27 | Good Samaritan | — | — |
-| 28 | Gatekeeper Three | — | — |
-| 29 | Switch | — | — |
-| 30 | HigherOrder | — | — |
-| 31 | Stake | — | — |
-| 32 | Impersonator | — | — |
-| 33 | Magic Animal Carousel | — | — |
-| 34 | Bet House | — | — |
-| 35 | Elliptic Token | — | — |
-| 36 | Cashback | — | — |
-| 37 | Impersonator Two | — | — |
-| 38 | UniqueNFT | — | — |
-| 39 | Forger | — | — |
-| 40 | NotOptimisticPortal | — | — |
+| 15 | Naught Coin | ERC20 `transferFrom` bypasses `lockTokens` modifier | 21 Aug |
+| 16 | Preservation | `delegatecall` storage collision to hijack ownership | 21 Aug |
 
 ---
 
@@ -71,7 +47,7 @@ Each challenge lives in its own folder:
 | Ownership manipulation | 1, 2, 4, 6 |
 | On-chain randomness | 3 |
 | Integer overflow/underflow | 5 |
-| `delegatecall` storage collision | 6 |
+| `delegatecall` storage collision | 6, 16 |
 | `selfdestruct` forced ETH | 7 |
 | Blockchain storage is public | 8, 12 |
 | DoS via revert | 9 |
